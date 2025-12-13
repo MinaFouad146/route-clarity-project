@@ -1,0 +1,100 @@
+/*START OF FONT FACES*/
+@font-face {
+    font-family: "Inter";
+    src: url('../webfonts/Inter-VariableFont_opsz\,wght.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+
+/*END   OF FONT FACES*/
+/*START OF GLOBAL STYLES*/
+body {
+    font-family: Inter, sans-serif;
+}
+
+:root {
+    --color-primary: #ea580c;
+    --color-secondary: #c2410c;
+    --orange-50: #fff7ed;
+
+}
+
+.prim-clr {
+    color: var(--color-primary);
+}
+
+.sec-clr {
+    color: var(--color-secondary);
+}
+
+.bg-orange-50 {
+    background-color: var(--orange-50);
+}
+
+.text-gray {
+    color: oklch(44.6% .03 256.802);
+}
+
+
+
+
+
+.section-spacing {
+    padding: 100px 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Start Nav Section */
+nav .navbar-collapse .get-started {
+    background-color: var(--color-primary);
+    padding: .625rem 1.75rem;
+}
+
+nav .navbar-collapse .sign-in {
+    padding: .625rem 1.75rem;
+}
+
+/* End Nav Section */
+/* Start Hero Section */
+.hero {
+    background-color: rgba(255, 247, 237, .2);
+}
+
+.hero .site-title h1 {
+    font-weight: 900;
+}
+
+.hero .btn.start {
+    --bs-btn-color: white;
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-padding-y: 1rem;
+}
+
+.hero .btn.start:hover {
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-color: white;
+}
+
+.hero .btn.watch {
+    --bs-btn-color: #000;
+    --bs-btn-bg: white;
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-padding-y: 1rem;
+}
+
+.hero .photo-cover img {
+    width: 75%;
+}
+
+
+
+
+
+
+/* End Hero Section */
