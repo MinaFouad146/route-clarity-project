@@ -70,8 +70,8 @@ body {
 
 
 .section-spacing {
-    padding: 6.25rem 0;
-    margin-top: 10px;
+    padding: 100px 0;
+    margin-top: .625rem;
 }
 
 a {
@@ -88,18 +88,18 @@ a {
 }
 
 .fs-10 {
-    font-size: 7px;
+    font-size: .4375rem;
 }
 
 /*End OF GLOBAL STYLES*/
 /* Start Nav Section */
 nav .navbar-collapse .get-started {
     background-color: var(--color-primary);
-    padding: 10px 28px;
+    padding: .625rem 1.75rem;
 }
 
 nav .navbar-collapse .sign-in {
-    padding: 10px 28px;
+    padding: .625rem 1.75rem;
 }
 
 /* End Nav Section */
@@ -116,8 +116,8 @@ nav .navbar-collapse .sign-in {
 .hero .btn.start {
     --bs-btn-color: white;
     --bs-btn-bg: var(--color-primary);
-    --bs-btn-padding-x: 40px;
-    --bs-btn-padding-y: 16px;
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-padding-y: 1rem;
 }
 
 .hero .btn.start:hover {
@@ -128,13 +128,13 @@ nav .navbar-collapse .sign-in {
 .hero .btn.watch {
     --bs-btn-color: #000;
     --bs-btn-bg: white;
-    --bs-btn-padding-x: 40px;
-    --bs-btn-padding-y: 16px;
+    --bs-btn-padding-x: 2.5rem;
+    --bs-btn-padding-y: 1rem;
 }
 
 .hero .photo-cover img {
-    border: solid white 30px;
-    border-radius: 3.125rem;
+    border: solid white 1.875rem;
+    border-radius: 50px;
 }
 
 .hero .layer {
@@ -147,23 +147,23 @@ nav .navbar-collapse .sign-in {
 
     transform: rotate(3deg);
     z-index: -1;
-    border-radius: 1.875rem;
+    border-radius: 30px;
 }
 
 .hero .mobile {
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
     background-color: var(--color-primary);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     bottom: -7%;
     left: 10%;
 }
 
 .hero .code {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 104px;
+    height: 104px;
     background-color: var(--color-primary);
-    border-radius: 20px;
+    border-radius: 1.25rem;
     top: -7%;
     right: 10%;
 }
@@ -180,10 +180,10 @@ nav .navbar-collapse .sign-in {
 /* End solutions Section */
 
 .solutions .solution-icons {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--color-primary);
-    border-radius: 20px;
+    border-radius: 1.25rem;
 }
 
 .solutions ul {
@@ -195,8 +195,8 @@ nav .navbar-collapse .sign-in {
 }
 
 .solutions .card:hover {
-    transform: translate(0, -10px);
-    box-shadow: 0px 0px 30px 0px rgba(234, 88, 12, .3);
+    transform: translate(0, -0.625rem);
+    box-shadow: 0rem 0rem 1.875rem 0rem rgba(234, 88, 12, .3);
 }
 
 .solutions .card .solution-icons {
@@ -210,38 +210,38 @@ nav .navbar-collapse .sign-in {
 /* End Solution Section */
 /* Start Tech Section */
 .tech .nodejs-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-green);
 }
 
 .tech .python-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-blue);
 }
 
 .tech .golang-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-red);
 }
 
 .tech .java-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-purple);
 }
 
 .tech .dotnet-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-indigo);
 }
 
 .tech .ruby-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 64px;
+    height: 64px;
     background-color: var(--hard-teal);
 }
 
@@ -301,12 +301,12 @@ nav .navbar-collapse .sign-in {
 
 .tech .nav-tabs .nav-link.active {
     --bs-nav-tabs-link-active-border-color: transparent;
-    border-bottom: var(--color-primary) 2px solid;
+    border-bottom: var(--color-primary) .125rem solid;
 }
 
 .tech .nav-tabs .nav-link:hover {
     --bs-nav-tabs-link-hover-border-color: transparent;
-    border-bottom: var(--color-primary) 2px solid;
+    border-bottom: var(--color-primary) .125rem solid;
 }
 
 .tech .tab-content .langs .card {
@@ -314,22 +314,22 @@ nav .navbar-collapse .sign-in {
 }
 
 .tech .tab-content .langs .card:hover {
-    transform: translate(0, -10px);
-    box-shadow: 0px 5px 20px 5px #0000ff1a;
+    transform: translate(0, -0.625rem);
+    box-shadow: 0rem .3125rem 1.25rem .3125rem #0000ff1a;
 }
 
 /* End Tech Section */
 /* Start Testimonial Section */
 
 .testimonial .testimonial-photo {
-    width: 5rem;
-    height: 5rem;
+    width: 80px;
+    height: 80px;
 }
 
 
 .testimonial .carousel .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
+    width: .625rem;
+    height: .625rem;
     border-radius: 50%;
     background-color: #0000ff1a;
     transition: all 0.6s ease;
@@ -342,7 +342,7 @@ nav .navbar-collapse .sign-in {
 .testimonial .carousel .carousel-indicators button:hover {
     background-color: var(--color-primary);
     opacity: .5;
-    width: 40px;
+    width: 2.5rem;
 }
 
 /* End Testimonial Section */
@@ -350,10 +350,10 @@ nav .navbar-collapse .sign-in {
 
 .faq .accordion .accordion-item {
     border-color: var(--gray-220);
-    padding: 20px 10px;
-    border-radius: 1.25rem;
-    margin-bottom: 1rem;
-    border-top: solid 1px var(--gray-220);
+    padding: 1.25rem .625rem;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    border-top: solid .0625rem var(--gray-220);
 }
 
 
@@ -362,7 +362,7 @@ nav .navbar-collapse .sign-in {
     background-color: transparent;
     --bs-accordion-border-color: transparent;
     color: var(--hard-brown);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 
 }
@@ -370,7 +370,7 @@ nav .navbar-collapse .sign-in {
 
 .faq .accordion .accordion-button::after {
     content: "";
-    --bs-accordion-btn-icon-width: 2rem;
+    --bs-accordion-btn-icon-width: 32px;
     background-color: rgba(234, 88, 12, .2);
     color: var(--color-primary);
     border-radius: 50%;
@@ -381,12 +381,100 @@ nav .navbar-collapse .sign-in {
 
 .faq .accordion .accordion-button {
     color: var(--hard-brown);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
+
 /* End FQA Section */
 /* Start Contact Section */
-.contact .contact-form input{
-    
+.contact .budget .form-check-input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    border: none;
+    box-shadow: none;
 }
+
+
+.contact .budget .form-check-input:checked[type="radio"] {
+    --bs-form-check-bg-image: none;
+}
+
+.contact .budget label .selected {
+    border-radius: 1.25rem;
+    border: solid .125rem var(--gray-220);
+}
+
+/* Style selected radio option */
+.contact .budget .form-check-label input[type="radio"]:checked~.selected {
+    background-color: rgba(234, 88, 12, .1);
+}
+
+.contact .budget .form-check-label input[type="radio"]:checked~.selected p {
+    color: rgba(234, 88, 12);
+}
+
+
+.contact form .form-control,
+.contact form .form-select {
+    background-color: rgba(229, 231, 235, .3);
+    padding: 1.125rem .625rem;
+    border-radius: .9375rem;
+}
+
+.contact form .form-control:focus,
+.contact form .form-select:focus {
+    border: solid 2px var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 0 .25rem rgba(234, 88, 12, .1);
+}
+
+.contact form textarea {
+    height: 1000px;
+    resize: none;
+
+}
+
+.contact .form-check-input {
+    border-color: var(--color-primary);
+    padding: .625rem .625rem;
+}
+
+.contact .form-check-input:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    padding: .625rem .625rem;
+}
+
+.contact form .btn {
+    --bs-btn-bg: var(--color-primary);
+    --bs-btn-color: white;
+    --bs-btn-font-weight: 600;
+    --bs-btn-padding-y: 1.125rem;
+    --bs-btn-border-radius: 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact form .btn:hover {
+    --bs-btn-hover-bg: var(--color-primary);
+    --bs-btn-hover-color: white;
+    --bs-btn-padding-y: 1.125rem;
+    --bs-btn-border-hover-radius: 1.25rem;
+    transform: translate(0, -0.625rem);
+    box-shadow: 0px 5px 30px 0px rgba(234, 88, 12, .5);
+}
+
+.contact .order-md-last {
+    background-color: #c2410c;
+}
+
+.contact .order-md-last .flag-holder {
+    /* background-color: rgba(234, 88, 12, 0.9); */
+    background-color: rgb(255, 255, 255,.2);
+    width: 5.25rem;
+    height: 3rem;
+}
+
+
 /* End Contact Section */
