@@ -39,6 +39,8 @@ body {
     --hard-teal: #009689;
 
     --hard-brown: #7c2d12;
+    --gray-220: #e5e7eb;
+
 }
 
 .text-brown {
@@ -343,5 +345,48 @@ nav .navbar-collapse .sign-in {
     width: 40px;
 }
 
-
 /* End Testimonial Section */
+/* Start FQA Section */
+
+.faq .accordion .accordion-item {
+    border-color: var(--gray-220);
+    padding: 20px 10px;
+    border-radius: 1.25rem;
+    margin-bottom: 1rem;
+    border-top: solid 1px var(--gray-220);
+}
+
+
+
+.faq .accordion .accordion-button:not(.collapsed) {
+    background-color: transparent;
+    --bs-accordion-border-color: transparent;
+    color: var(--hard-brown);
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+
+.faq .accordion .accordion-button::after {
+    content: "";
+    --bs-accordion-btn-icon-width: 2rem;
+    background-color: rgba(234, 88, 12, .2);
+    color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+
+
+}
+
+.faq .accordion .accordion-button {
+    color: var(--hard-brown);
+    font-size: 18px;
+    font-weight: 600;
+}
+/* End FQA Section */
+/* Start Contact Section */
+.contact .contact-form input{
+    
+}
+/* End Contact Section */
