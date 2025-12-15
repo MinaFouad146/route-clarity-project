@@ -11,13 +11,38 @@
 /*START OF GLOBAL STYLES*/
 body {
     font-family: Inter, sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
     --color-primary: #ea580c;
     --color-secondary: #c2410c;
     --orange-50: #fff7ed;
+    --light-green: #dcfce7;
+    --light-green-2: #f0fdf4;
+    --hard-green: #00a63e;
+    --blue-100: #dbeafe;
+    --blue-50: #eff6ff;
+    --red-100: #ffe2e2;
+    --red-50: #fef2f2;
+    --red-50: #fef2f2;
+    --hard-red: #e7000b;
+    --hard-blue: #155dfb;
+    --purple-100: #f3e8ff;
+    --purple-50: #faf5ff;
+    --hard-purple: #9810fa;
+    --indigo-100: #e0e7ff;
+    --indigo-50: #eef2ff;
+    --hard-indigo: #4f39f6;
+    --teal-100: #cbfbf1;
+    --teal-50: #f0fdfa;
+    --hard-teal: #009689;
 
+    --hard-brown: #7c2d12;
+}
+
+.text-brown {
+    color: var(--hard-brown);
 }
 
 .prim-clr {
@@ -36,12 +61,15 @@ body {
     color: oklch(44.6% .03 256.802);
 }
 
-
+.mw-50 {
+    max-width: 50%;
+}
 
 
 
 .section-spacing {
-    padding: 100px 0;
+    padding: 6.25rem 0;
+    margin-top: 10px;
 }
 
 a {
@@ -49,20 +77,34 @@ a {
     text-decoration: none;
 }
 
+.width-fit-content {
+    width: fit-content;
+}
+
+.height-fit-content {
+    height: fit-content;
+}
+
+.fs-10 {
+    font-size: 7px;
+}
+
+/*End OF GLOBAL STYLES*/
 /* Start Nav Section */
 nav .navbar-collapse .get-started {
     background-color: var(--color-primary);
-    padding: .625rem 1.75rem;
+    padding: 10px 28px;
 }
 
 nav .navbar-collapse .sign-in {
-    padding: .625rem 1.75rem;
+    padding: 10px 28px;
 }
 
 /* End Nav Section */
 /* Start Hero Section */
 .hero {
     background-color: rgba(255, 247, 237, .2);
+    min-height: 100vh;
 }
 
 .hero .site-title h1 {
@@ -72,8 +114,8 @@ nav .navbar-collapse .sign-in {
 .hero .btn.start {
     --bs-btn-color: white;
     --bs-btn-bg: var(--color-primary);
-    --bs-btn-padding-x: 2.5rem;
-    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 40px;
+    --bs-btn-padding-y: 16px;
 }
 
 .hero .btn.start:hover {
@@ -84,17 +126,222 @@ nav .navbar-collapse .sign-in {
 .hero .btn.watch {
     --bs-btn-color: #000;
     --bs-btn-bg: white;
-    --bs-btn-padding-x: 2.5rem;
-    --bs-btn-padding-y: 1rem;
+    --bs-btn-padding-x: 40px;
+    --bs-btn-padding-y: 16px;
 }
 
 .hero .photo-cover img {
-    width: 75%;
+    border: solid white 30px;
+    border-radius: 3.125rem;
+}
+
+.hero .layer {
+    top: 0;
+    left: 12%;
+    bottom: 0;
+    right: 12%;
+    background-color: var(--color-primary);
+    opacity: .2;
+
+    transform: rotate(3deg);
+    z-index: -1;
+    border-radius: 1.875rem;
+}
+
+.hero .mobile {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    bottom: -7%;
+    left: 10%;
+}
+
+.hero .code {
+    width: 6.5rem;
+    height: 6.5rem;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+    top: -7%;
+    right: 10%;
+}
+
+/* End Hero Section */
+/* Start solutions Section */
+.solutions .services-note,
+.tech .tech-note {
+    width: fit-content;
 }
 
 
 
+/* End solutions Section */
+
+.solutions .solution-icons {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-primary);
+    border-radius: 20px;
+}
+
+.solutions ul {
+    list-style: none;
+}
+
+.solutions .card {
+    transition: all 0.5s ease;
+}
+
+.solutions .card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 0px 30px 0px rgba(234, 88, 12, .3);
+}
+
+.solutions .card .solution-icons {
+    transition: all 0.5s ease;
+}
+
+.solutions .card:hover .solution-icons {
+    transform: scale(1.1);
+}
+
+/* End Solution Section */
+/* Start Tech Section */
+.tech .nodejs-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-green);
+}
+
+.tech .python-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-blue);
+}
+
+.tech .golang-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-red);
+}
+
+.tech .java-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-purple);
+}
+
+.tech .dotnet-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-indigo);
+}
+
+.tech .ruby-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--hard-teal);
+}
+
+.tech .langs .nodejs .card {
+    background-color: var(--light-green-2);
+}
+
+.tech .langs .nodejs ul li {
+    background-color: var(--light-green);
+    color: var(--hard-green);
+}
+
+.tech .langs .python .card {
+    background-color: var(--blue-50);
+}
+
+.tech .langs .python ul li {
+    background-color: var(--blue-100);
+    color: var(--hard-blue);
+}
+
+.tech .langs .golang .card {
+    background-color: var(--red-50);
+}
+
+.tech .langs .golang ul li {
+    background-color: var(--red-100);
+    color: var(--hard-red);
+}
+
+.tech .langs .java .card {
+    background-color: var(--purple-50);
+}
+
+.tech .langs .java ul li {
+    background-color: var(--purple-100);
+    color: var(--hard-purple);
+}
+
+.tech .langs .dotnet .card {
+    background-color: var(--indigo-50);
+}
+
+.tech .langs .dotnet ul li {
+    background-color: var(--indigo-100);
+    color: var(--hard-indigo);
+}
+
+.tech .langs .ruby .card {
+    background-color: var(--teal-50);
+}
+
+.tech .langs .ruby ul li {
+    background-color: var(--teal-100);
+    color: var(--hard-teal);
+}
+
+.tech .nav-tabs .nav-link.active {
+    --bs-nav-tabs-link-active-border-color: transparent;
+    border-bottom: var(--color-primary) 2px solid;
+}
+
+.tech .nav-tabs .nav-link:hover {
+    --bs-nav-tabs-link-hover-border-color: transparent;
+    border-bottom: var(--color-primary) 2px solid;
+}
+
+.tech .tab-content .langs .card {
+    transition: all 0.3s ease;
+}
+
+.tech .tab-content .langs .card:hover {
+    transform: translate(0, -10px);
+    box-shadow: 0px 5px 20px 5px #0000ff1a;
+}
+
+/* End Tech Section */
+/* Start Testimonial Section */
+
+.testimonial .testimonial-photo {
+    width: 5rem;
+    height: 5rem;
+}
 
 
+.testimonial .carousel .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #0000ff1a;
+    transition: all 0.6s ease;
+}
 
-/* End Hero Section */
+.testimonial .carousel .carousel-indicators .active {
+    background-color: var(--color-primary);
+}
+
+.testimonial .carousel .carousel-indicators button:hover {
+    background-color: var(--color-primary);
+    opacity: .5;
+    width: 40px;
+}
+
+
+/* End Testimonial Section */
