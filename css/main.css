@@ -74,6 +74,11 @@ body {
     margin-top: .625rem;
 }
 
+.footer-spacing {
+    padding: 50px 0;
+    margin-top: .313rem;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -85,6 +90,18 @@ a {
 
 .height-fit-content {
     height: fit-content;
+}
+
+.fs-7 {
+    font-size: 13px;
+}
+
+.fs-8 {
+    font-size: 11px;
+}
+
+.fs-9 {
+    font-size: 9px;
 }
 
 .fs-10 {
@@ -397,6 +414,8 @@ nav .navbar-collapse .sign-in {
 }
 
 
+
+
 .contact .budget .form-check-input:checked[type="radio"] {
     --bs-form-check-bg-image: none;
 }
@@ -471,10 +490,35 @@ nav .navbar-collapse .sign-in {
 
 .contact .order-md-last .flag-holder {
     /* background-color: rgba(234, 88, 12, 0.9); */
-    background-color: rgb(255, 255, 255,.2);
+    background-color: rgb(255, 255, 255, .2);
     width: 5.25rem;
     height: 3rem;
 }
 
+.contact {
+    border-bottom: solid .0625rem rgba(0, 0, 0, .5);
+}
 
 /* End Contact Section */
+/* Start Footer Section */
+footer .footer-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-primary);
+    border-radius: .625rem;
+}
+
+footer .footer-text1 {
+    max-width: 75%;
+}
+
+footer .social-media-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: .625rem;
+    color: rgba(0, 0, 0, .5);
+}
+
+
+/* End Footer Section */
