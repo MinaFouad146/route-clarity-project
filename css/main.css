@@ -17,6 +17,7 @@ body {
 :root {
     --color-primary: #ea580c;
     --color-secondary: #c2410c;
+    --color-accent: #fb923c;
     --orange-50: #fff7ed;
     --light-green: #dcfce7;
     --light-green-2: #f0fdf4;
@@ -40,7 +41,10 @@ body {
 
     --hard-brown: #7c2d12;
     --gray-220: #e5e7eb;
+}
 
+.txt-clr-hard-brown{
+    color: var(--hard-brown);
 }
 
 .text-brown {
@@ -108,11 +112,30 @@ a {
     font-size: .4375rem;
 }
 
+.from-primary-to-sec {
+    background-image: linear-gradient(-45deg, var(--color-primary), var(--color-secondary));
+}
+
+.from-accent-to-sec-txt {
+    background-image: linear-gradient(90deg, var(--color-accent), var(--color-secondary));
+    background-clip: text;
+    color: transparent;
+}
+
+.from-sec-to-primary {
+    background-image: linear-gradient(-45deg, var(--color-secondary), var(--color-primary));
+}
+
 /*End OF GLOBAL STYLES*/
 /* Start Nav Section */
 nav .navbar-collapse .get-started {
     background-color: var(--color-primary);
     padding: .625rem 1.75rem;
+}
+
+nav .icon {
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 nav .navbar-collapse .sign-in {
@@ -132,7 +155,8 @@ nav .navbar-collapse .sign-in {
 
 .hero .btn.start {
     --bs-btn-color: white;
-    --bs-btn-bg: var(--color-primary);
+    /* --bs-btn-bg: var(--color-primary); */
+    background-image: linear-gradient(-45deg, var(--color-secondary), var(--color-primary));
     --bs-btn-padding-x: 2.5rem;
     --bs-btn-padding-y: 1rem;
 }
@@ -140,6 +164,26 @@ nav .navbar-collapse .sign-in {
 .hero .btn.start:hover {
     --bs-btn-hover-bg: var(--color-primary);
     --bs-btn-hover-color: white;
+}
+
+section .section-note {
+    background-color: color-mix(in srgb, var(--color-accent), transparent 80%);
+}
+
+.hero .site-title .title-bg-1 {
+    background-image: linear-gradient(90deg, var(--color-secondary)15%, var(--color-accent), var(--color-secondary)70%);
+    background-clip: text;
+    color: transparent;
+}
+
+.hero .site-title .title-bg-2 {
+    color: var(--hard-brown);
+}
+
+.hero .site-title .title-bg-3 {
+    background-image: linear-gradient(90deg, var(--color-accent), var(--color-secondary) 40%);
+    background-clip: text;
+    color: transparent;
 }
 
 .hero .btn.watch {
@@ -179,7 +223,8 @@ nav .navbar-collapse .sign-in {
 .hero .code {
     width: 104px;
     height: 104px;
-    background-color: var(--color-primary);
+    /* background-color: var(--color-primary); */
+    background-image: linear-gradient(-45deg, var(--color-primary)25%, var(--color-accent));
     border-radius: 1.25rem;
     top: -7%;
     right: 10%;
