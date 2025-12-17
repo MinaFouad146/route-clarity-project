@@ -43,8 +43,12 @@ body {
     --gray-220: #e5e7eb;
 }
 
-.txt-clr-hard-brown{
+.txt-clr-hard-brown {
     color: var(--hard-brown);
+}
+
+.bold-title {
+    font-weight: 900;
 }
 
 .text-brown {
@@ -388,6 +392,11 @@ section .section-note {
     height: 80px;
 }
 
+.testimonial .bold-title {
+    background-image: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    background-clip: text;
+    color: transparent;
+}
 
 .testimonial .carousel .carousel-indicators [data-bs-target] {
     width: .625rem;
@@ -409,6 +418,12 @@ section .section-note {
 
 /* End Testimonial Section */
 /* Start FQA Section */
+
+.faq .bold-title {
+    background-image: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    background-clip: text;
+    color: transparent;
+}
 
 .faq .accordion .accordion-item {
     border-color: var(--gray-220);
@@ -449,6 +464,14 @@ section .section-note {
 
 /* End FQA Section */
 /* Start Contact Section */
+
+.contact .bold-title {
+    background-image: linear-gradient(90deg, var(--color-secondary), var(--color-accent));
+    background-clip: text;
+    color: transparent;
+}
+
+
 .contact .budget .form-check-input[type="radio"] {
     appearance: none;
     -webkit-appearance: none;
